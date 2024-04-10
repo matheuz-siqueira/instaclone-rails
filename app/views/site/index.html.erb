@@ -1,0 +1,7 @@
+<% if user_signed_in? %>
+    Welcome <%= current_user.username %>
+<% end %>
+
+<div id="posts">
+    <%= render @posts %>
+</div>
