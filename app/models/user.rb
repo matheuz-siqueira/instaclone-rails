@@ -10,8 +10,4 @@ class User < ApplicationRecord
   has_many :likes
   has_many :comments 
 
-  def like!(post)
-    # binding.pry
-    self.likes.create(post: post)
-  end
 end

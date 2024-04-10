@@ -8,6 +8,7 @@
     </div>
     <div class="post-actions">
     <%= turbo_frame_tag "post-likes" do %>
+        <%# binding.pry %>
         <% if liked?(post, current_user)%> 
             <%= button_to "", post_likes_path(post), class: "post-actions-unlike", method: :delete%>
         <%else%> 
