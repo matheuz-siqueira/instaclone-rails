@@ -19,7 +19,7 @@
     </div>
     <div class="post-comments">
         <div id="comment-form"><%= render partial: "comments/form", locals: { post: post }%></div>
-        <div id="post-comments-list-<%= post.id %>">
+        <div id="post-comments-list">
             <%= render partial: "comments/list", locals: { post: post } %>
         </div>
     </div>
